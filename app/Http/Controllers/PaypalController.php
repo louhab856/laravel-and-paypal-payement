@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Srmklive\PayPal\Services\ExpressCheckout;
 class PaypalController extends Controller
 {
+    public function goPayement(){
+        return view("products.welcome");
+    }
     public function payment(){
         $data = [];
         $data["items"]=[
